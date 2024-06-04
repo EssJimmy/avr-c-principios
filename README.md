@@ -1,3 +1,12 @@
+# Introducción
+Se preguntarán porqué existe este repo, en mi semestre fue un relajo entenderle a ensamblador, y ya que se está quedando más obsoleto que otra cosa, tomé en mis manos el actualizar un poco el material del curso, haciendo *scripts* fáciles que deberían funcionar en cualquier situación, hay dos *scripts* por sistema operativo, excepto en el caso de *Linux*, donde existe un tercer *script* que pueden utilizar junto con `grep` para averiguar el puerto al que conectaron su arduino.
+
+Esto también sirve para facilitar el proceso de instalación de las dependencias, para Windows se instalará `scoop` y para MacOS `homebrew` que realizarán la función *package manager* de *Linux*, no se preocupen, en los *scripts* ya se instalarán automáticamente.
+
+Principios de Mecatrónica es una materia que disfrute mucho, con excepciones en algunos casos, por lo que me gustaría que todos la disfruten tanto como yo pero sin sufrir tanto como yo.
+
+Mucha suerte :)
+
 # Proceso de instalación
 ## Windows
 
@@ -17,6 +26,18 @@ cd .\Downloads\arduino-principios\ # aqui se estarian metiendo a la carpeta ardu
 6. Listo, ahora pueden utilizar C con arduino, traten de hacer el ejemplo `blink.c` dentro de la carpeta `examples`, para correr el archivo pueden utilizar el otro *script* dentro de la carpeta, `MAKE.ps1`
 
 ## Linux/MacOS
+
+**Nota: Si no tienen XCode en su Mac, descarguénlo antes de comenzar, lo pueden hacer directamente desde el sitio de Apple para desarrolladores**
+
+1. Corran el siguiente comando (si estan el linux, cambien el package manager, por defecto está *pacman*):
+
+```bash
+cd linux/macos 
+chmod a+x INSTALL.sh 
+sudo ./INSTALL.sh
+```
+2. Les debe de pedir una contraseña, si su laptop no tiene contraseña solo denle <kbd>enter</kbd>.
+3. Listo, ahora pueden utilizar C con arduino
 
 # Cargar código en el Arduino
 1. Utilizaremos el *script* `MAKE.ps1`, funciona de la misma manera para todos los sistemas operativos (en *linux* tendrán que abrir el puerto de manera manual)
